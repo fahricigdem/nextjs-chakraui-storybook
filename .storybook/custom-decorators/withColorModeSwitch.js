@@ -59,5 +59,6 @@ export const withColorModeSwitch = (Story) => (
 
       <Story />
     </Container>
+    
   </ChakraProvider>
 )
