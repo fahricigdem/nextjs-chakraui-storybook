@@ -50,4 +50,4 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## :pencil: Thanx to Boilerplate Author
 <br/>
-    <a href="https://github.com/Lukazovic"><br /><sub><b>Lucas Vieira</b></sub></a>
+    <a href="https://github.com/Lukazovic"><br /><b>Lucas Vieira</b></a>
