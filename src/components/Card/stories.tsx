@@ -23,7 +23,7 @@ Red.args={
       /** 
     font size
     */ 
-    photoUrl:"noname",
+    photoUrl:"",
     manufacturer:"noname" ,
     model:"noname",
     location:"noname",

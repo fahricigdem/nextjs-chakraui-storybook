@@ -7,8 +7,11 @@ export interface ButtonProps {
     colorScheme?:string 
 }
  
-const MyButton: React.FunctionComponent<ButtonProps> = ({children, size="lg", colorScheme="teal"}) => {
-    return ( <Button size={size} colorScheme={colorScheme} >{children || "Hello" }</Button>);
+const MyButton: React.FunctionComponent<ButtonProps> = (props) => {
+    const {children,...rest}=props
+    return ( 
+        <Button {...rest}>{children || "Hello" }</Button>
+    );
 }
  
 export default MyButton;

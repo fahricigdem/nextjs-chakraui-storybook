@@ -22,7 +22,7 @@ export const parameters = {
   }
 }
 
-addDecorator(withNextRouter())
+//addDecorator(withNextRouter())
 
 export const decorators = [withColorModeSwitch] // REMOVE if your application don't use color mode switch
 // export const decorators = [withChakraUi] // USE this one if your application don't use color mode switch

@@ -9,6 +9,7 @@ export default {
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />
+export const Default = Template.bind({});
 
 export const Large = Template.bind({});
 
@@ -22,8 +23,9 @@ Small.args={
   size:"sm"
 }
 
-export const Blue = Template.bind({});
+export const SmallBlue = Template.bind({});
 
-Blue.args={
+SmallBlue.args={
+  ...Small.args,
   colorScheme:"blue"
 }
