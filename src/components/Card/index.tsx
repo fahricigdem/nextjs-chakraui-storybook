@@ -1,4 +1,4 @@
-import { VStack, Text, Box, Button, Image} from "@chakra-ui/react";
+import {Stack,Text, Box, Button, Image} from "@chakra-ui/react";
 import Link from "next/link";
 
 import { useColorMode } from "@chakra-ui/react";
@@ -18,6 +18,7 @@ export interface CardProps {
      id?:string,
      bgLight?:string,
      bgDark?:string,
+   
 }
 
 const Card = (props:CardProps) => {
@@ -31,8 +32,9 @@ const Card = (props:CardProps) => {
 
   return (
     <LinkBox cursor="pointer" className="my-box">
-      <VStack
-        w={["80vw", "45vw", "25vw", "18vw"]}
+      <Stack
+        direction={["column","row"]}
+        //w={["80vw", "45vw", "25vw", "18vw"]}
         borderRadius="lg"
         overflow="hidden"
         bg={bgColor[colorMode]}
@@ -63,6 +65,7 @@ const Card = (props:CardProps) => {
           p="4"
           maxW="250"
           color={textColor[colorMode]}
+          w={["80vw", "45vw", "25vw", "18vw"]}
           // sx={{
           //   ".my-box:hover &": {
           //     color: "red.600",
@@ -90,7 +93,7 @@ const Card = (props:CardProps) => {
             </LinkOverlay>
           </Link>
         </Box>
-      </VStack>
+      </Stack>
     </LinkBox>
   );
 };
