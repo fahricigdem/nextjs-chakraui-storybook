@@ -1,10 +1,8 @@
-![NextJs with Chakra-ui Boilerplate](https://i.imgur.com/WfNLFV8.png)
-
-This is a [Next.js](https://nextjs.org/) boilerplate
+ For this project a [Next.js](https://nextjs.org/) boilerplate used
 
 ## What is inside?
 
-This project uses lot of stuff as:
+In this project used:
 
 - [NextJS](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -17,9 +15,9 @@ This project uses lot of stuff as:
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
 
-## Getting Started
+## Getting Started by using boilerplate
 
-To create a project from this boilerplate run:
+To create a project with this boilerplate run:
 
 ```bash
 yarn create next-app MY_PROJECT_NAME --example https://github.com/Lukazovic/nextjs-with-chakra-ui-boilerplate
@@ -51,9 +49,5 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 
 ## :pencil: Thanx to Boilerplate Author
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/Lukazovic"><br /><sub><b>Lucas Vieira</b></sub></a><br /></td>
-  <tr>
-</table>
+<br/>
+    <a href="https://github.com/Lukazovic"><br /><sub><b>Lucas Vieira</b></sub></a>
