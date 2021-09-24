@@ -1,4 +1,6 @@
 import React from 'react';
+import { Story} from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import {Stack,Text, Box, Button, Image} from "@chakra-ui/react";
 import Link from "next/link";
@@ -9,7 +11,7 @@ import { LinkBox, LinkOverlay } from "@chakra-ui/react";
 
 export default {
   title: 'Chakra/Card',
-};
+} as Meta;
 
 export interface CardProps {
     /** 
@@ -26,13 +28,12 @@ export interface CardProps {
    
 }
 
-export const Card = (props:CardProps) => {
-    const {photoUrl,manufacturer,model,location,price,id,bgLight="gray.200",bgDark="gray.700"}=props
+const Template: Story<CardProps> = (args) => {
+    const {photoUrl,manufacturer,model,location,price,id,bgLight="gray.200",bgDark="gray.700"}=args
 
     const { colorMode } = useColorMode();
     const bgColor = { light: bgLight, dark: bgDark };
     const textColor = { light: "blue.900", dark: "blue.200" };
-
     return(
 <LinkBox cursor="pointer" className="my-box">
       <Stack
@@ -98,4 +99,41 @@ export const Card = (props:CardProps) => {
         </Box>
       </Stack>
     </LinkBox>
-)}
+    )
+}
+
+export const Default = Template.bind({});
+
+Default.args={
+    manufacturer:"Bosch",
+    photoUrl:"",
+    model:"U/42z4",
+    location:"Hannover",
+    price:"1000$" ,
+    id:"",
+    bgLight:"teal.200",
+    bgDark:"teal.800",
+  }
+
+
+  export const Blue = Template.bind({});
+
+Blue.args={
+    manufacturer:"Arcelik",
+    photoUrl:"",
+    model:"K/42z4",
+    location:"Bonn",
+    price:"2000$" ,
+    id:"",
+    bgLight:"blue.200",
+    bgDark:"blue.800",
+  }
+
+  export const Yellow = Template.bind({});
+
+  Yellow.args={
+    ...Blue.args,
+    bgLight:"yellow.200",
+    bgDark:"yellow.800",
+  }
+
