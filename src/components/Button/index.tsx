@@ -1,16 +1,21 @@
 import { Button } from '@chakra-ui/react';
 import * as React from 'react';
 
-export interface ButtonProps {
-    
+export type ButtonProps= {
+      /**
+   * Is this the principal call to action on the page?
+   */
     size?:string,
     colorScheme?:string 
 }
- 
-const MyButton: React.FunctionComponent<ButtonProps> = (props) => {
-    const {children,...rest}=props
+
+/**
+ * Primary UI component for user interaction
+ */
+const MyButton: React.FunctionComponent<ButtonProps> = ({children,size="md",colorScheme}) => {
+    //const {children,...rest}=props
     return ( 
-        <Button {...rest}>{children || "Hello" }</Button>
+        <Button size={size} colorScheme={colorScheme}>{children || "Hello" }</Button>
     );
 }
  
